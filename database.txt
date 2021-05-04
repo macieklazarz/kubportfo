@@ -1,0 +1,6 @@
+datadata
+mojmail@wp.pl,  mesedz 1811
+olo@op.pl,  messagetxt
+polmail@op.pl,  polmail
+enmail@op.pl,  enmail
+ostatnimail@op.pl,  tresc maila

@@ -1,0 +1,644 @@
+body
+{
+	background-color: #318C2A;
+	margin: 0;
+	witdth: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+h1
+{
+	font-family: 'Krona One', sans-serif;
+	font-size: 40px;
+	color: white;
+}
+
+h2
+{
+	font-family: 'Jura', sans-serif;
+	font-size: 40px;
+	color: white;
+}
+
+
+h3
+{
+	font-family: 'Krona One', sans-serif;
+	font-size: 20px;
+	color: white;
+	font-weight: 100;
+}
+
+#typed
+{
+	color: white;
+}
+
+.heightclass
+{
+	border:1px solid yellow;
+	height: 40px
+	
+}
+
+
+.blackclass
+{
+	background-color: black;
+	width: 100%;
+	height:fit-content;
+	/*border:3px solid black;*/
+	margin-left: auto;
+	margin-right:auto;
+
+}
+
+
+.orangeclass
+{
+	
+	height: auto;
+	/*border:3px solid orange;*/
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.redclass
+{
+	float: left;
+	width: 16%;
+	height: 300px;
+	/*border:2px solid red;*/
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	
+
+
+}
+
+.blueclass
+{
+	margin-top:40px;
+	width: fit-content;
+	height: fit-content;
+	/*border: 3px solid blue;*/
+	margin-left: 15%;
+	
+}
+
+
+
+.blueclass h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #318C2A; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+
+
+.greenclass
+{
+	
+	width: fit-content;
+	height: auto;
+	/*border: 3px solid green;*/
+	position: relative;
+	display: block;
+	font-size: 90px;
+	top: 20%;
+	text-align: center;
+	transition: transform 1s ease-in-out;
+	margin: auto;
+	
+}
+
+
+.greenclass:hover
+{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.rotateclass
+{
+	
+	width: fit-content;
+	height: auto;
+	/*border: 3px solid green;*/
+	position: relative;
+	display: block;
+	font-size: 90px;
+	top: 20%;
+	text-align: center;
+	transition: transform 2s ease-in-out;
+	margin: auto;
+	
+}
+
+
+.rotateclass:hover
+{
+	-webkit-transform: scale(1.2) rotate(360deg);
+	-ms-transform: scale(1.2) rotate(360deg);
+	transform: scale(1.2) rotate(360deg);
+}
+
+
+.textmenu
+{
+	margin-top: 90px;
+	font-family: 'Krona One', sans-serif;
+	font-size: 20px;
+
+}
+#mainimg
+{
+	margin-left: auto;
+	margin-right: auto;
+	height: fit-content;
+	width: fit-content;
+	/*border: 3px solid yellow;*/
+	padding: 30px;
+
+}
+
+.photo
+{
+		border-radius: 20px;
+}
+
+.footer
+{
+	margin-top: auto;
+	background-color: black;
+	color: white;
+	font-family: 'Krona One', sans-serif;
+	font-size: 20px;
+	height: 60px;
+	padding-top: 20px;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.footerleft
+{
+
+	text-align: right;
+	color: white;
+	font-family: 'Krona One', sans-serif;
+	font-size: 20px;
+	width: 55%;
+	float: left;
+	margin-top: 15px;
+
+}
+
+.footerright
+{
+	
+	width: 40%;
+	float: left;
+	margin-left: 2%
+
+}
+
+.offercontainer
+{
+	/*background-color: pink;*/
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	
+}
+
+.offer
+{
+	width: 100%;
+	height: fit-content;
+	background-color: #025B0E;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.offertext
+{
+	width: 50%;
+	/*background-color: orange;*/
+	float: left;
+	margin-bottom: auto;
+}
+
+.offerphoto
+{
+	width: fit-content;
+	/*background-color: red;*/
+	float: left;
+}
+
+.offerclear
+{
+	clear: both;
+}
+
+.parameter
+{
+	float: left;
+	/*background-color: blue;*/
+	width: 49%;
+	text-align: right;
+	/*border: 1px solid red;*/
+}
+
+.value
+{
+	float:left;
+	/*background-color: grey;*/
+	width: 50%;
+}
+
+
+
+.gallerycontainer
+{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: red;*/
+	/*weight: fit-content;
+	height: fit-content;*/
+}
+
+.photogallery
+{
+	margin-top: 10px;
+	border-radius: 20px;
+
+}
+
+
+.photo1
+{
+	margin-top: 10px;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	width: fit-content;
+	height: min;
+	margin-left:auto;
+	margin-right: auto;
+	
+}
+
+.photo1 img
+{
+	transition: all 0.7s ease-in-out;
+	border-radius: 2px;
+}
+
+
+.photo1:hover img
+{
+	-webkit-transform: scale(1.2) rotate(-5deg);
+	-ms-transform: scale(1.2) rotate(-5deg);
+	transform: scale(1.2) rotate(-5deg);
+}
+
+.overlay
+{
+	position: relative;
+	width: 100%;
+	height: 20%;
+}
+
+.overlay .link
+{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 20%;
+	background-color: #111;
+	left: 0px;
+	bottom: 0px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	
+}
+
+.overlay:hover .link
+{
+	opacity: 0.8;
+}
+
+
+.photo2
+{
+	margin-top: 10px;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	width: fit-content;
+	margin-left:auto;
+	margin-right: auto;
+	
+}
+
+.photo2 img
+{
+	transition: all 0.7s ease-in-out;
+	border-radius: 2px;
+}
+
+
+.photo2:hover img
+{
+	-webkit-transform: scale(1.2) rotate(5deg);
+	-ms-transform: scale(1.2) rotate(5deg);
+	transform: scale(1.2) rotate(5deg);
+}
+	
+p
+{
+	font-size: 20px;
+	font-family: 'Krona One', sans-serif;
+	
+}
+
+.aboutme
+{
+	width: 70%;
+	height: fit-content;
+	/*background-color: red;*/
+	background-color: #025B0E;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	
+	
+}
+
+
+
+.aboutmetext
+{
+	width: 48%;
+	height: fit-content;
+	/*background-color: blue;*/
+	padding: 22px;
+	float: left;
+	
+}
+
+.aboutmetext h2
+{
+	font-size: 20px;
+	text-align: justify;
+	font-family: 'Prompt', sans-serif;
+	color: white;
+}
+
+.aboutmephoto
+{
+	width: 40%;
+	height: fit-content;
+	/*background-color: grey;*/
+	float:left;
+	margin: 2%;
+
+}
+
+#profilphotodiv
+{
+	width: fit-content;
+	height: fit-content;
+	/*background-color: red;*/
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+#profilphoto
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	transition: all 0.7s ease-in-out;
+	
+}
+
+#profilphoto:hover
+{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1) );
+	transform: scale(1.1);
+}
+
+
+
+#container
+{
+	background-color: #025B0E;
+	/*background-color: red;*/
+	width: 50%;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	border-radius: 20px;
+	/*-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);*/
+}
+
+#containerleft
+{
+	float: left;
+	width: 60%;
+	/*background-color: blue;*/
+}
+
+
+
+
+input[type=email],
+input[type=password],
+textarea
+{
+	width: 100%;
+	background-color: #efefef;
+	color: #e9f3e9;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+	font-family: 'Krona One', sans-serif;
+}
+
+input[type=email]:focus,
+input[type=password]:focus,
+textarea
+{
+	/*-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);*/
+	border: 2px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+input[type=submit]
+{
+	width: 100%;
+	background-color: #36b03c;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	font-family: 'Krona One', sans-serif;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #428C42;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #428C42;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #428C42;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #428C42;
+}
+
+#containerright
+{
+	float: left;
+	width: 40%;
+	/*background-color: red;*/
+	
+}
+
+
+#contacttext
+{
+	font-family: 'Krona One', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	margin-top: 5%;
+	
+}
+
+
+#contactfontello
+{
+	margin-left: 8%;
+	margin-right: auto;
+	/*background-color: grey; */
+	margin-top: 5%;
+}
+
+.fbicon
+{
+	float: left;
+	background-color: #4668b3;
+	width: 23%;
+	text-align: center;
+	font-size: 50px;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 2%;
+}
+
+.googleicon
+{
+	float: left;
+	background-color: #d95333;
+	width: 23%;
+	text-align: center;
+	font-size: 50px;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 2%;
+}
+
+.yticon
+{
+	float: left;
+	background-color: #d94348;
+	width: 23%;
+	text-align: center;
+	font-size: 50px;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 2%;
+}
