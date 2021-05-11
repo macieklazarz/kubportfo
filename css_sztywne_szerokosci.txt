@@ -1,26 +1,12 @@
-@viewport
-{
-	zoom: 1.0;
-	width: extend-to-zoom;
-}
-
 body
 {
 	background-color: #318C2A;
 	margin: 0;
-	/*witdth: 100vh;*/
+	/*witdth: 1000px;*/
 	/*display: flex;
 	flex-direction: column;*/
-	min-width: 911px;
+	min-height: 100vh;
 }
-
-.maincontainer
-{
-	witdth: 100%;
-	height: 100%;
-	border:  1px solid yellow;
-}
-
 
 a
 {
@@ -105,17 +91,14 @@ h3
 {
 	margin-top:40px;
 	/*width: fit-content;*/
-	/*width: 1000px;*/
-	/*min-width: 911px;*/
-	max-width: 90%;
+	width: 1000px;
+	min-width: 911px;
 	height: fit-content;
-	/*border: 3px solid blue;*/
+	border: 3px solid blue;
 	/*margin-left: 15%;*/
-	margin-left: 10%;
-	/*margin-right: 10px;*/
-	/*margin-right: auto;*/
-	padding-left: 0.1em;
-	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5%;
 	
 }
 
@@ -124,8 +107,8 @@ h3
 .blueclass h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #318C2A; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  /*white-space: normal;*/
+  /*white-space: nowrap; /* Keeps the content on a single line */
+  white-space: normal;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
@@ -204,11 +187,10 @@ h3
 	margin-left: auto;
 	margin-right: auto;
 	height: fit-content;
-	margin-top: 5%;
 	/*width: fit-content;*/
 	min-width: 911px;
 	/*border: 3px solid yellow;*/
-	/*padding: 30px;*/
+	padding: 30px;
 	text-align: center;
 
 }
@@ -229,11 +211,10 @@ h3
 	font-family: 'Krona One', sans-serif;
 	font-size: 20px;
 	height: 60px;
-	margin-top: 5%;
+	padding-top: 20px;
 	position: relative;
 	left: 0;
 	bottom: 0;
-	/*position: bottom;*/
 	width: 100%;
 	min-width: 911px;
 
