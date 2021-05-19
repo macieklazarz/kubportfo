@@ -10,19 +10,19 @@ app = Flask(__name__)
 
 def write_to_file(data):
     with open('database.txt', mode='a') as database:
-        database.write(f'\n{data["mail"]},  {data["message"]}')
+        database.write(f'\n{data["email"]},  {data["message"]}, {datetime.datetime.now()}')
         # database.write('data')
 
 
 
 def mail_sender(data):
     email = EmailMessage()
-    email['from'] = data.get("mail")
-    email['to'] = 'macieklazarz@gmail.com'
+    email['from'] = data.get("email")
+    email['to'] = 'tuzownia@gmail.com'
     # email['subject'] = data.get("subject")
-    email['subject'] = (f'New message from {data.get("mail")}')
+    email['subject'] = (f'Wiadomość od {data.get("email")}')
 
-    email.set_content(f'Message from {data.get("mail")}: {data.get("message")}')
+    email.set_content(f'Wiadomość od {data.get("email")}: {data.get("message")}')
     # email.set_content('mail contebt')
 
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
@@ -91,14 +91,14 @@ def submit_form():
                 mail_sender(data)
             except:
                not_sent('mail not sent')
-            try:
-                sms_message()
-            except:
-                not_sent('sms not sent')
-            return redirect('/mailsent.html')
+            # try:
+            #     sms_message()
+            # except:
+            #     not_sent('sms not sent')
+            return redirect('/mailsent.html#contact')
         else:
             # print("lipa")
-            return redirect('/mailsent.html')
+            return redirect('/mailsent.html#contact')
     else:
         return 'sth is wrong'
 

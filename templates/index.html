@@ -1,106 +1,266 @@
 <!DOCTYPE html>
-<html lang="pl">
-
-	<head>
-
-		<meta charset="utf-8">
-		<title>Tuzy Jakub Wasiak</title>
-		 <meta charset="UTF-8">
-		  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-		  <meta content="width=device-width,initial-scale=1" name="viewport">
-		  <meta content="description" name="description">
-		  <meta name="google" content="notranslate" />
-		<meta name="description" content="Opis zawartości strony dla wyszukiwarek">
-		<meta name="keywords" content="słowa, kluczowe, opisujące, zawartość">
-		<meta name="author" content="Jan Programista">
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-
-		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
-
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="css/fontello.css">
-		<!-- <script src="skrypt.js"></script> -->
-
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Exo&family=Jura:wght@300;400;500&family=Krona+One&family=Open+Sans:wght@300&family=Prompt:wght@300&display=swap" rel="stylesheet">
-
-
-	</head>
-
-	<body>
-		<div class="blackclass">
-
-				<div class="redclass">
-					<div class="greenclass">
-						<a href="index.html"><i class="icon-home"></i></a>
-					</div>
-					<div class="textmenu"><a href="index.html">Strona główna</a></div>
-				</div>
-
-				<div class="redclass">
-					<div class="rotateclass">
-						<span><a href="oferta.html"><i class="icon-cog"></i></a></span>
-					</div>
-					<div class="textmenu"><a href="oferta.html">Oferta</a></div>
-				</div>
-
-				<div class="redclass">
-					<div class="greenclass">
-						<span><a href="galeria.html"><i class="icon-camera"></i></a></span>
-					</div>
-					<div class="textmenu"><a href="galeria.html">Galeria</a></div>
-				</div>
-
-				<div class="redclass">
-					<div class="greenclass">
-						<span><a href="omnie.html"><i class="icon-male"></i></a></span>
-					</div>
-					<div class="textmenu"><a href="omnie.html">O mnie</a></div>
-				</div>
-
-				<div class="redclass">
-					<div class="greenclass">
-						<span><a href="contact.html"><i class="icon-mail-alt"></i></a></span>
-					</div>
-					<div class="textmenu"><a href="contact.html">Kontakt</a></div>
-				</div>
-
-				<div class="redclass">
-					<div class="rotateclass">
-						<span><a href="indexen.html"><i class="icon-spin3"></i></a></span>
-					</div>
-					<div class="textmenu"><a href="indexen.html">Switch to English</a></div>
-				</div>
-
-				<div style="clear:both;">
-				</div>
-
+<html lang="en">
+<head>
+	<meta charset="UTf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Complete Responsive Websitr Design</title>
+	<link rel="stylesheet" href=".\static/style.css">
+	<link rel="stylesheet" href=".\static\css/fontello.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><span>J</span>akubWasiakTuzy<span>.</span></a>
+		<div class="MenuToggle" onclick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="#stronaglowna" onclick="toggleMenu();"><div class="zoom"><i class="icon-home"></i></div>Strona główna</a></li>
+			<li><a href="#omnie" onclick="toggleMenu();"><div class="zoom"><i class="icon-male"></i></div>O mnie</a></li>
+			<li><a href="#Menu" onclick="toggleMenu();"><div class="zoom"><i class="icon-camera"></i></div>Galeria</a></li>
+			<li><a href="#oferta" onclick="toggleMenu();"><div class="spin"><i class="icon-cog"></i></div>Oferta</a></li>
+			<li><a href="#contact" onclick="toggleMenu();"><div class="zoom"><i class="icon-mail-alt"></i></div>Kontakt</a></li>
+			<li><a href="#xxx" onclick="toggleMenu();"><div class="spin"><i class="icon-spin3"></i></div>Switch to English</a></li>
+		</ul>
+	</header>
+	<section class="stronaglowna" id="stronaglowna">
+		<div class="content">
+			<h2>Choose your tuz!</h2>
+			<p>Zapoznaj się z moją ofertą i wybierz swojego tuza już dziś! Mamy dla Ciebie wiele ciekawych propozycji </p>
+			<!--<a href="#" class="btn">Our Menu</a> -->
 		</div>
-
-		<div class="blueclass">
-			<h1>Choose your tuz!</h1>
-			<h2>Zapoznaj się z moją ofertą i wybierz swojego tuza już dziś! </h2>
-			<h2>Mamy dla Ciebie wiele ciekawych propozycji</h2>
-
-		</div>
-
-		<div id="mainimg" position="bottom">
-			<img src="logo\pinterest_profile_image.png"  class="photo" />
-		</div>
-
-		<div class="footer">
-
-			<div style="text-align: center; padding-top: 5px;">Jakub Wasiak tuzy &copy; 2021
+	</section>
+	
+	<section class="omnie" id="omnie">
+		<div class="row">
+			<div class="col50">
+				<h2 class="titleText"><span>O</span> mnie<span>.</span></h2>
+				<p>Nazywam się Jakub Wasiak i zajmuję się produkcją i sprzedażą tuzów. Swoją działalność prowadzę od 2011 roku. Do chwili obecnej sprzedałem ponad 100 maszyn zadowolonym nabywcom. Już dziś możesz zostać jednym z nich!<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, dui sit amet dignissim posuere, sapien erat cursus massa, in suscipit felis elit et massa. Aenean nec metus ac ligula sodales ornare sed eu est. Proin vulputate a odio in pretium. In rutrum ex ullamcorper, fermentum purus convallis, tempus mi. Phasellus eu erat id ipsum suscipit auctor. Pellentesque velit nulla, imperdiet ac massa at, dictum suscipit turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vulputate erat quis neque varius imperdiet. Maecenas lacinia est consequat, mattis mi at, ullamcorper tortor. Phasellus vulputate commodo est nec auctor.
+				<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, dui sit amet dignissim posuere, sapien erat cursus massa, in suscipit felis elit et massa. Aenean nec metus ac ligula sodales ornare sed eu est. Proin vulputate a odio in pretium.
+				</p>
+				</div>
+				<div class="col50">
+					<div class="imgBx">
+						<!--<img src="static/new/images/img1.jpg"> -->
+						<img src="./static/new/images/profil2.jpg"> 
+					</div>
+				</div>
 			</div>
-
-
-
+	</section>
+	
+	<section class="Menu" id="Menu">
+		<div class="title">
+			<h2 class="titleText"> <span>G</span>aleria<span>.</span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz1.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 1</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz2.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 2</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz3.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 3</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz22.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 4</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz33.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 5</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz11.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 6</h3>
+				</div>
+			</div>
 		</div>
 
-
-
-
-
-	</body>
-
+		
+	</section>
+	
+	<!--
+	<section class="xxxx" id="xxxx">
+		<div class="title">
+			<h2 class="titleText">Our Kitchen<span>E</span>xpert</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/xxxx1.jpg">
+				</div>
+				<div class="text">
+					<h3>Someone Famous</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/xxxx2.jpg">
+				</div>
+				<div class="text">
+					<h3>Someone Famous</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/xxxx3.jpg">
+				</div>
+				<div class="text">
+					<h3>Someone Famous</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/xxxx4.jpg">
+				</div>
+				<div class="text">
+					<h3>Someone Famous</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	-->
+	
+	<section class="oferta" id="oferta">
+		<div class="title white">
+			<h2 class="titleText"> <span>M</span>oje tuzy<span>.</span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz11.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 1</h3>
+					<p>Parametr 1 : Wartość<br>
+							Parametr 2 : Wartość<br>
+							Parametr 3 : Wartość<br>
+							Parametr 4 : Wartość<br>
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz2.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 2</h3>
+					<p>Parametr 1 : Wartość<br>
+							Parametr 2 : Wartość<br>
+							Parametr 3 : Wartość<br>
+							Parametr 4 : Wartość<br>
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="static/new/images/tuz3.jpg">
+				</div>
+				<div class="text">
+					<h3>Tuz 3</h3>
+					<p>Parametr 1 : Wartość<br>
+							Parametr 2 : Wartość<br>
+							Parametr 3 : Wartość<br>
+							Parametr 4 : Wartość<br>
+					</p>
+				</div>
+			</div>
+				
+	</section>
+	
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2 class="titleText"> <span>K</span>ontakt<span>.</span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div class="frame">
+			<div class="contactForm">
+				<form action="submit_form" method="post"> 
+					<h3>Wyślij wiadomość:</h3>
+					<div class="inputBox">
+						<input type="text" name="email" placeholder="Twoje imię, mail, numer telefonu...">
+					</div>
+					<div class="inputBox">
+						<input type="text" name="temat" placeholder="Temat">
+					</div>
+					<div class="inputBox">
+						<textarea name="message" placeholder="Wiadomość"></textarea>
+					</div>
+					<div class="inputBox">
+						<input type="submit" value="Wyślij">
+					</div>
+				</form>
+				<h3>Telefon: 600 001 001</h3></br>
+			</div>
+			
+			
+			<div class="contactForm">
+				<h3>Media społecznościowe:</h3></br>
+				<div class="socialmedia">
+						<div class="fbicon">
+							<a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
+						</div>
+						<div class="googleicon">
+							<a href="https://www.google.com/" target="_blank"><i class="icon-google"></i></a>
+						</div>
+						<div class="yticon">
+							<a href="https://www.youtube.com/" class="tilelink" target="_blank" ><i class="icon-youtube"></i></a>
+						</div>
+					</div>
+			</div>
+			
+			<div class="contactForm">
+				<div class="socialmedia">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1605.0961252961238!2d20.086187528409543!3d50.529529929652675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717a1b84468cc15%3A0xa1e821d83f75ecaa!2sBiuro%20projektowe%20Jakub%20Wasiak!5e1!3m2!1spl!2sus!4v1621266273822!5m2!1spl!2sus" <!-- width="600" height="450" --> style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="copyrightText">
+		<p>2021 <a href='#'>Jakub Wasiak Tuzy</a>. &copy</p>
+	</div>
+	
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+			});
+			
+			function toggleMenu(){
+			const MenuToggle=document.querySelector('.MenuToggle');
+			const navigation = document.querySelector('.navigation');
+			MenuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+			}
+	</script>
+</body>
 </html>
